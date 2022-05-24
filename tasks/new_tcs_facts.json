@@ -1,0 +1,26 @@
+{
+  "description": "Create a new TCS fact file",
+  "input_method": "stdin",
+  "parameters": {
+    "bu": {
+      "description": "Business unit",
+      "type": "String[1]"
+    },
+    "environment": {
+      "description": "Class the node is in",
+      "type": "String[1]"
+    },
+    "classes": {
+      "description": "The role the node should be classified with",
+      "type": "String[1]"
+    },
+    "location": {
+      "description": "Datacenter the node is in",
+      "type": "Enum['Woking', 'Hayes', 'Lansing DC1', 'Lansing DC3']"
+    },
+    "patchrelease": {
+      "description": "The patch release number",
+      "type": "Integer[1]"
+    }
+  }
+}

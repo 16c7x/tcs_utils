@@ -1,0 +1,11 @@
+{
+    "description": "Update the patchrelease fact",
+    "input_method": "stdin",
+    "parameters": {
+      "patchrelease": {
+        "description": "The new patch release number",
+        "type": "Integer[1]"
+      }
+    }
+  }
+  
