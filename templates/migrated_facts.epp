@@ -1,0 +1,6 @@
+---
+bu: <%= $bu %>
+class: <%= $env %>
+classes: <%= $classes %>
+location: <%= $location %>
+patchrelease: <%= $patch_release %>
