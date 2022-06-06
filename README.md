@@ -7,8 +7,8 @@ in the [PDK documentation][1].
 
 1. [Description](#description)
 1. [Setup - The basics of getting started with tcs_utils](#setup)
-1. [Tasks](*tasks)
-1. [Migrated facts](*migrated_facts)
+1. [Tasks](#tasks)
+1. [Migrated facts](#migrated_facts)
 1. [Development - Guide for contributing to the module](#development)
 
 ## Description
@@ -37,7 +37,6 @@ classes: role_base_linux
 location: uk1
 patch_release: 12345
 ```
-
 
 ## Development
 
