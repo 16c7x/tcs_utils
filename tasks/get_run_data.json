@@ -1,0 +1,3 @@
+{
+  "description": "Runs puppet agent -t and dumps the output into /tmp/run_data.txt"
+}  

@@ -1,0 +1,12 @@
+Info: Using configured environment 'production'
+Info: Retrieving pluginfacts
+Info: Retrieving plugin
+Info: Retrieving locales
+Info: Loading facts
+Info: Caching catalog for tcs5nix1.classroom.puppet.com
+Info: Applying configuration version 'puppet-production-58929a6a8ca'
+Notice: Migration role
+Notice: /Stage[main]/Role::Migrate/Notify[Migration role]/message: defined 'message' as 'Migration role'
+Notice: 1234
+Notice: /Stage[main]/Role::Migrate/Notify[patch]/message: defined 'message' as '1234'
+Notice: Applied catalog in 0.32 seconds

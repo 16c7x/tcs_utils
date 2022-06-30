@@ -1,0 +1,4 @@
+{
+  "description": "Diffs the output of the puppet run against the reference"
+}
+  
