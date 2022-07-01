@@ -1,10 +1,9 @@
-plan tcs_utils::migration(
+plan module2::migration(
   TargetSpec $targets,
 ){
-  return run_task('tcs_utils::sudo_perms', $targets)
+  run_task('module2::sudo_perms', $targets)
 
   apply_prep($targets)
-  apply($target) { notify { foo: } }
 
   apply($targets) {
     file {'/tmp/role_base_linux.txt':
@@ -12,8 +11,21 @@ plan tcs_utils::migration(
       mode   => '0644',
       owner  => 'root',
       group  => 'root',
-      source => 'puppet:///modules/tcs_utils/role_base_linux.txt',
+      source => 'puppet:///modules/module2/role_base_linux.txt',
+    }
+
+    file {'/tmp/exclusions.txt':
+      ensure => file,
+      mode   => '0644',
+      owner  => 'root',
+      group  => 'root',
+      source => 'puppet:///modules/module2/exclusions.txt',
     }
   }
+
+  run_task('module2::get_run_data', $targets)
+  run_task('module2::exclusions', $targets)
+  run_task('module2::run_diff', $targets)
+
 }
 

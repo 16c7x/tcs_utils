@@ -1,0 +1,8 @@
+Info: Using configured environment 'production'
+Info: Retrieving plugin
+Info: Retrieving locales
+Info: Loading facts
+Info: Caching catalog for tcs5nix1.classroom.puppet.com
+Info: Applying configuration version 'puppet-production-58929a6a8ca'
+Notice: Migration role
+Notice: Applied catalog*
